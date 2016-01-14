@@ -2,10 +2,10 @@
 
 int main(){
 	int input;
-	int quarters;
-	int dimes:
-	int nickels;
-	int pennies;
+	int quarters = 0;
+	int dimes = 0;
+	int nickels = 0;
+	int pennies = 0;
 
 	std::cout << "Input a number in the range [0, 99]: ";
 	std::cin >> input;
@@ -29,29 +29,24 @@ int main(){
 		pennies++;
 	}
 
-	std::cout << quarters;
-	if(quarters > 1){
-		std::cout << " quarters." << std::endl;
-	}else{
-		std::cout << " quarter." << std::endl;
+	if(quarters != 0){
+		std::cout << quarters << " quarter";
+		std::cout << (quarters > 1 ? "s." : ".")  << std::endl;
 	}
-	std::cout << dimes;
-	if(dimes >1){
-		std::cout << " dimes." << std::endl;
-	}else{
-		std::cout << " dime." << std::endl;
+
+	if(dimes != 0){
+		std::cout << dimes << "dime";
+		std::cout << (dimes > 1 ? "s." : ".") << std::endl;
 	}
-	std::cout << nickels;
-	if(nickels > 1){
-		std::cout << " nickels." << std::endl;
-	}else{
-		std::cout << "nickel." << std::endl;
+
+	if(nickels != 0){
+		std::cout << nickels << " nickel";
+		std::cout << (nickels > 1 ? "s." : ".") << std::endl;
 	}
-	std::cout << pennies;
-	if(pennies > 1){
-		std::cout << " pennies." << std::endl;
-	}else{
-		std::cout << " penny." << std::endl;
+
+	if(pennies != 0){
+		std::cout << pennies << " penn";
+		std::cout << (pennies >1 ? "ies." : "y.") << std::endl;
 	}
 
 	return 0;
