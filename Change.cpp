@@ -35,7 +35,7 @@ int main(){
 	}
 
 	if(dimes != 0){
-		std::cout << dimes << "dime";
+		std::cout << dimes << " dime";
 		std::cout << (dimes > 1 ? "s." : ".") << std::endl;
 	}
 
